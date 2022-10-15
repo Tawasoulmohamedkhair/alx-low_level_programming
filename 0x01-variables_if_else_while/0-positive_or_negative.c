@@ -4,8 +4,8 @@
 /* more headers goes there */
 /* betty style doc for function main goes there */
 /**
- *main - Determine if a random number is posititve,negative or zero.
- *Return :return 0 on success
+ *main - Determine if a random number is posititve,negative or zero
+ *Return:return 0 on success
  **/
 int main(void)
 {
@@ -20,6 +20,5 @@ else if (n < 0)
 printf("%d is %s\n", n, "negative"); 
 else
 printf("%d is %s\n", n, "zero");
-
 return (0);
 }
