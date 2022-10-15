@@ -5,7 +5,7 @@
 /* betty style doc for function main goes there */
 /**
  *main - Determine if a random number is posititve,negative or zero.
- *Return : 0 on success
+ *Return :return 0 on success
  **/
 int main(void)
 {
@@ -15,10 +15,10 @@ n = rand() - RAND_MAX / 2;
 
 /* your code goes there */
 if (n > 0)
-printf("%d is %s", n, "positive\n");
+printf("%d is %s\n", n, "positive");
 else if (n == 0)
-printf("%d is %s", n, " zero\n");
+printf("%d is %s\n", n, " zero");
 else
-printf("%d is %s", n, "negative");
+printf("%d is %s\n", n, "negative");
 return (0);
 }
