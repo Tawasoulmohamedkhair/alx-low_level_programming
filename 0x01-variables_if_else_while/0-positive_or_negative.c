@@ -4,20 +4,21 @@
 /* more headers goes there */
 /* betty style doc for function main goes there */
 /**
- *main - ENTRY point
- *RETURN-Always return 0
+ *main - Determine if a random number is posititve,negative or zero.
+ *Return : 0 on success
  **/
 int main(void)
 {
 int n;
 srand(time(0));
-n = rand() - RAND_MAX / 2;					
+n = rand() - RAND_MAX / 2;
+
 /* your code goes there */
 if (n > 0)
-printf("%d is %s",n,"positive\n");
+printf("%d is %s", n, "positive\n");
 else if (n == 0)
-printf("%d is %s",n," zero\n");
+printf("%d is %s", n, " zero\n");
 else
-printf("%d is %s",n,"negative");
+printf("%d is %s", n, "negative");
 return (0);
 }
