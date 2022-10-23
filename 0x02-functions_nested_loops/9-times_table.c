@@ -8,7 +8,7 @@ void times_table(void)
 
 	for (num = 0; num <= 9; num++)
 	{
-		for (mult = 1; mult <= 9; mult++)
+		for (mult = 0 ; mult <= 9; mult++)
 		{
 			prot = num * mult;
 			if (mult != 0)
