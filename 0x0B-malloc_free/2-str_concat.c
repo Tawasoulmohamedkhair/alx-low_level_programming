@@ -3,6 +3,7 @@
 #include <stdlib.h>
 /**
 * str_concat - Main Entry* @s1: input
+* @s1: input
 * @s2: input
 * Return: 0
 **/
