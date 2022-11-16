@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 {
 	int arg1, arg2, result;
 	int (*func)(int, int);
-	char *get_op;
+	char op;
 
 	if (argc != 4)
 	{
@@ -33,12 +33,13 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	if ((get_op == '/' || get_op == '%') && arg2 == 0)
-	{
-		printf("Error\n")
+	
+	op = *argv[2];
+		if ((op == '/' || op == '%') && arg2 == 0)
+		{
+			printf("Error\n");
 			exit(100);
-	}
-
+		}
 	result = func(arg1, arg2);
 	printf("%d\n", result);
 	return (0);
